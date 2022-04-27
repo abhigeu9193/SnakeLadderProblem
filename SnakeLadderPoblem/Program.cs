@@ -5,7 +5,6 @@ class SnakeLadderProblem
 {
     public static object rollDice;
     public static object random;
-    int playPos = 0;
     static void Main(string[] args)
     {
        
