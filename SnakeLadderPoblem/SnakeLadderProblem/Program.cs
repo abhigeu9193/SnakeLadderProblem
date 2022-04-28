@@ -14,18 +14,19 @@ class SnakeLadderProblem
         int player = 0;
         Random random = new();
         int rollDice = random.Next(0, 7);
-        switch(rollDice)
+        switch (rollDice)
         {
             case IS_PLAYER_POSITION:
-                player +=rollDice;
+                player += rollDice;
                 break;
             case IS_SNAKE_POSITION:
-                player -= rollDice; 
-                break ;
+                player -= rollDice;
+                break;
             default:
-                player=0;
+                player = 0;
                 break;
         }
-        Console.WriteLine("Rolled Dice number is :" +rollDice);
+        Console.WriteLine("Rolled Dice number is :" + rollDice);
     }
 }
+
